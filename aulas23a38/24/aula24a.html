@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var a = 10;
+        var b = 20;
+        var valor1 = b < a; //False
+        var valor2 = b >= a; //True
+
+        //Negação !
+        document.writeln(!valor1);
+        document.write("<br>");
+        document.writeln(!valor2);
+        document.write("<br><br>");
+
+        //Conjunção &&
+        document.writeln(valor1 && valor2 ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(valor2 && valor1 ? "True" : "False");
+        document.write("<br><br>");
+
+        //Disjunção ||
+        document.writeln(valor1 || valor2 ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(valor2 || valor1 ? "True" : "False");
+        document.write("<br><br>");
+
+        //Xor ^
+        document.writeln(valor1 ^ valor2 ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(valor2 ^ valor1 ? "True" : "False");
+        document.write("<br><br>");
+
+        //Igual ==
+        document.writeln(a == b ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(b == "20" ? "True" : "False");
+        document.write("<br><br>");
+
+        //Identico ===
+        document.writeln(a === b ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(b === "20" ? "True" : "False");
+        document.write("<br><br>");
+
+        //Maior >
+        document.writeln(a > b ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(b > "20" ? "True" : "False");
+        document.write("<br><br>");
+
+        //Menor <
+        document.writeln(a < b ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(b < a ? "True" : "False");
+        document.write("<br><br>");
+
+        //Menor igual <=
+        document.writeln(a <= b ? "Sim" : "Não");
+        document.write("<br>");
+        document.writeln(b <= a ? "True" : "False");
+        document.write("<br>");
+    </script>
+    <style>
+
+        body {
+            background-color: rgb(153, 153, 212);
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+
+    <title>JS</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

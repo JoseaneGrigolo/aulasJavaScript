@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03</title>
+    <script>
+    
+    var fruta = [];
+    fruta[0] = "Banana";
+    fruta[1] = "Pera";
+    fruta[2] = "Maça";
+    fruta[3] = "Uva";
+    
+    //add no fim
+    fruta.push("Pessego", "Amora");
+    document.write(fruta.join(", "));
+    document.write("<br><br>");
+  
+    //add no inicio
+    fruta.unshift("Abacate");
+    fruta.unshift("Carambola");
+    document.write(fruta.join(", "));
+    document.write("<br><br>");
+
+    //remove no final
+    fruta.pop();
+    fruta.pop();
+    document.write(fruta.join(", "));
+    document.write("<br><br>");
+    
+    //remove no inicio
+    fruta.shift();
+    fruta.shift();
+    document.write(fruta.join(", "));
+    document.write("<br><br>");
+
+
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

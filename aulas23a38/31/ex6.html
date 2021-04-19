@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to top, rgb(62, 62, 194), pink, rgb(46, 151, 46)) no-repeat;
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            
+        }
+        div {
+            width: 100px; 
+            height: 100px; 
+            margin: 20px; 
+            float: left;
+            border: 1px solid pink;
+            border-radius: 100px;
+        }
+
+    </style>
+    <script>
+        function um(){
+            alert("cliquei na div");
+        }
+        function dois(){
+            alert("cliquei duas vezes na div");
+        }
+        function tres(){
+            alert("cliquei e soltei a div");
+        }
+        function quatro(){
+            alert("passei sobre a div");
+        }
+        function cinco(){
+            alert("sai da div");
+        }
+
+    </script>
+</head>
+<body>
+
+    <div onclick="um()" style="background-color: rgb(231, 180, 85);">1</div>
+    <div ondblclick="dois()" style="background-color: rgb(216, 216, 135);">2</div>
+    <div onmouseup="tres()" style="background-color: rgb(131, 131, 201);">3</div>
+    <div onmouseover="quatro()" style="background-color: rgb(247, 86, 86);">4</div>
+    <div onmouseout="cinco()" style="background-color: rgb(119, 206, 119);">5</div>
+
+</body>
+</html>

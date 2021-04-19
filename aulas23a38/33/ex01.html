@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .estilo1 {
+            background-color: green;
+            color: black;
+            width: 300px;
+
+        }
+
+        .estilo2 {
+            background-color: blue;
+            text-align: right;
+            font-size: 30px;
+            color: white;
+            padding: 10px;
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        function giovanni(opcao) {
+            if(opcao == 1){
+                document.getElementById('espaco').className = 'estilo2'
+            } else {
+                document.getElementById('espaco').className = 'estilo1'
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="espaco" class="estilo1">Aqui estou mudando o estilo via classe</div>
+    <br>
+    <button type="button" onclick="giovanni(1)">Mudar o estilo da DIV </button>
+    <button type="button" onclick="giovanni(2)">Resetar o estilo da DIV </button>
+</body>
+
+</html>

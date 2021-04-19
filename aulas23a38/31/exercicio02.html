@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex02</title>
+    <script>
+
+        var numeros = [];
+
+        for (var i = 0; i < 10; i++) {
+            numeros.push(parseInt(prompt("Digite um número: ")));
+        }
+     
+        numeros.forEach(function(valor){
+            document.write(valor + " ");
+        })
+        document.write("<br><br>")
+     
+        var quadradoNumeros = numeros.map(function(valor){
+            return valor**2;
+        });
+    
+        quadradoNumeros.forEach(function(valor){
+            document.write(valor + " ");
+            
+        })   
+        document.write("<br><br>")
+
+        var filtrando = quadradoNumeros.filter(function(elemento){
+            return elemento > 30;
+        });
+        document.write(filtrando);
+        document.write("<br><br>");
+      
+        var verifica = numeros.find(function (valor) {
+            return valor === 16;
+        });
+        if (verifica) {
+            document.write("Existe o número 16")
+        } else {
+            document.write("Não existe o número 16")
+        }
+        document.write("<br><br>");
+      
+        var verificaIndex = quadradoNumeros.findIndex(function (valor) {
+            return valor === 30;
+        });
+
+        document.write(verificaIndex);
+        document.write("<br><br>");
+        
+        numeros.pop();
+        numeros.pop();
+        numeros.unshift(1500);
+        numeros.unshift(320);
+      
+        numeros.forEach(function(valor){
+            document.write(valor);
+            document.write("<br><br>");
+        });
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

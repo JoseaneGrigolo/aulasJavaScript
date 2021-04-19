@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div {
+            background-color: pink;
+            color: rgb(19, 105, 163);
+            border: 10px double rgb(22, 183, 204);
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .estilo {
+            
+            background-color: rgb(127, 127, 202);
+            color: white;
+            border: 10px dashed rgb(190, 48, 171);
+            width: 300px;
+            height: 300px;      
+            font-size: 40px;
+        }
+
+    </style>
+    <script>
+        function sortear() {
+            var nums = [];
+            for (var i = 0; i < 6; i++) {
+                nums.push(Math.round(1 + Math.random() * 60));
+            }
+            document.getElementById('jogo').innerHTML = nums[0] + "<br>" + nums[1] + "<br>" + nums[2] + "<br>" + nums[3] + "<br>" + nums[4] + "<br>" + nums[5];
+        }
+        function alterar() {
+            document.getElementById('jogo').className = 'estilo'
+        }
+    </script>
+</head>
+
+<body>
+    <div  Onclick='alterar()' id='jogo'>
+        <h2>Sorteio da Mega Sena:</h2>
+        <button Onclick='sortear()'>Clique Aqui!</button>
+    </div>
+
+
+</body>
+
+</html>

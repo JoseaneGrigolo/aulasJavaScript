@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+    <script>
+
+        var listaDeCoisas = [];
+        listaDeCoisas['frutas'] = [];
+        listaDeCoisas['cores']= [];
+
+        for(var i = 0; i < 6; i++){
+            listaDeCoisas['frutas'][i] = prompt("Digite uma fruta: ");       
+        }
+
+        for(var i = 0; i < 8; i++){
+            listaDeCoisas['cores'][i] = prompt("Digite uma cor: ");                    
+        }
+
+        var verifica = listaDeCoisas['frutas'].find(function (valor) {
+            return valor === "Banana";
+        });
+
+        if (verifica) {
+            document.write("Existe a fruta banana.");            
+        } else {
+            document.write("Não existe a fruta banana.");
+        }
+
+        document.write("<br><br>");
+        var verifica = listaDeCoisas['cores'].find(function (valor) {
+            return valor === "Azul";
+        });
+
+        var verificaIndex = listaDeCoisas['cores'].findIndex(function (valor) {
+            return valor === "Azul";
+        });
+
+        if (verifica) {
+            document.write("Existe a cor azul.");
+            document.write("Posição: " + verificaIndex);      
+        } else {
+            document.write("Não existe a cor azul.")            
+        }
+
+        document.write("<br><br>");
+        listaDeCoisas['frutas'].forEach(function(valor){
+            document.write(valor + " ");            
+        })   
+
+        document.write("<br><br>")
+        for (var i = 0; i < 8; i++) {
+            document.write(listaDeCoisas['cores'][i] + " ");    
+        }
+   
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

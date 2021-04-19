@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var numeros = [];
+        var triploNumeros = [];
+
+        for (var i = 0; i < 3; i++) {
+            numeros.push(parseInt(prompt("Digite um numero: "), 10));
+        }
+
+        var verifica = numeros.find(function (valor) {
+            return valor === 10;
+        });
+
+     
+        if (verifica) {
+            document.write("Existe no array")
+        } else {
+            document.write("Não existe no array")
+        }
+
+        var verificaIndex = numeros.findIndex(function (valor) {
+            return valor === 10;
+        });
+
+        console.log(verificaIndex);
+        /*
+                console.log(numeros.filter(function(elemento){
+                    return elemento>5;
+                }));
+        */
+        /*
+        triploNumeros = numeros.map(function(valor){
+            return valor*3;
+        });
+
+        console.log(numeros);
+        console.log(triploNumeros);
+*/
+        /*
+        numeros.forEach(function(valor){
+            console.log(valor*2);
+        })
+*/
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

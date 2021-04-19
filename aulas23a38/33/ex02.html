@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO</title>
+    <style>
+        .estilo1 {
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .estilo2 {
+            background-color: blue;
+            font-size: 30px;
+            color: white;
+            width: 400px;
+            height: 200px;
+            border-radius: 20px;
+            border: 15px double red;
+        }
+
+        .estilo3 {
+            background-color: violet;
+            font-size: 40px;
+            color: white;
+            width: 400px;
+            height: 200px;
+            border-radius: 100px;
+            border: 15px dashed blue;
+            padding: 50px;
+        }
+
+        .estilo4 {
+            background-color: orange;
+            font-size: 50px;
+            color: white;
+            width: 400px;
+            height: 200px;
+            border: 15px dotted green;
+            padding: 50px;
+        }
+        .p1 {
+            background-color: rgb(131, 69, 160);
+            font-size: 20px;
+            color: white;
+            width: 200px;
+            height: 50px;
+        }
+        .p2 {
+            background-color: rgb(212, 86, 86);
+            font-size: 50px;
+            color: white;
+            width: 400px;
+            height: 100px;
+            border: 15px dotted blue;
+            padding: 50px;
+        }
+        button {
+            width: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+        }
+     
+
+    </style>
+    <script>
+        function giovanni(opcao) {
+
+            switch (opcao) {
+                case 1:
+                    document.getElementById('espaco').className = 'estilo1'
+                    break;
+                case 2:
+                    document.getElementById('espaco').className = 'estilo2'
+                    break;
+                case 3:
+                    document.getElementById('espaco').className = 'estilo3'
+                    break;
+                case 4:
+                    document.getElementById('espaco').className = 'estilo4'
+                    break;
+
+            }
+        }
+
+        function giovanniP(opcao) {
+
+            switch (opcao) {
+                case 1:
+                    document.getElementById('paragrafo').className = 'p1'
+                    break;
+                case 2:
+                    document.getElementById('paragrafo').className = 'p2'
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="espaco" class="estilo1">EXEMPLO DIV</div>
+    <br>
+    <button type="button" onclick="giovanni(2)">OPÇÃO 1 </button>
+    <button type="button" onclick="giovanni(3)">OPÇÃO 2 </button>
+   <br><br>
+    <button type="button" onclick="giovanni(4)">OPÇÃO 3 </button>
+    <button type="button" onclick="giovanni(1)">RESET </button>
+    <br><br>
+    <p id="paragrafo" class="p1">EXEMPLO PARAGRAFO</p>
+  
+    <button type="button" onclick="giovanniP(2)">OPÇÃO 1</button>
+    <button type="button" onclick="giovanniP(1)">RESET </button>
+</body>
+
+</html>

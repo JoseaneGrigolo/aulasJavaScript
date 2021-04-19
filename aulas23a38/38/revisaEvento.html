@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISAO</title>
+    <style>
+        .corpo {
+            background-color: blueviolet;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .divisor {
+            text-align: center;
+            font-size: 18px;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        function cambio() {
+            var cash = document.getElementById('valor').value;
+            var cashFloat = parseFloat(cash);
+            if (cashFloat <= 0) {
+                alert("Digite um numero acima de 0");
+            }
+            var moedaInicial = document.getElementById('moeda1').value;
+            var moedaFinal = document.getElementById('moeda2').value;
+            var cambioFinal = (cashFloat * moedaInicial) / moedaFinal;
+
+            document.getElementById('resultado').innerHTML = ("O resultado é " + cambioFinal);
+
+        
+        }
+
+        
+
+    </script>
+
+</head>
+
+<body class="corpo">
+    <div class="divisor">
+        <h1>Conversor Simples de Moedas</h1>
+        <input type="text" id="valor">
+        <select id="moeda1">
+            <option value="0">Moeda de origem</option>
+            <option value="5.60">Dolar(USD)</option>
+            <option value="4.46">Dolar(CAN)</option>
+            <option value="7.78">Libra</option>
+            <option value="1">Real</option>
+            <option value="6.68">Euro</option>
+            <option value="0.061">Peso Argentino</option>
+        </select>
+
+        <select id="moeda2">
+            <option value="0">Moeda de destino</option>
+            <option value="5.60">Dolar(USD)</option>
+            <option value="4.46">Dolar(CAN)</option>
+            <option value="7.78">Libra</option>
+            <option value="1">Real</option>
+            <option value="6.68">Euro</option>
+            <option value="0.061">Peso Argentino</option>
+        </select>
+        <button type="button" onclick="cambio()">Clique para converter</button>
+      
+        <div id="resultado" class="divisor"></div>
+    </div>
+</body>
+
+</html>

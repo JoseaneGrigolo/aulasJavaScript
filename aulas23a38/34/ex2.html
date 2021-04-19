@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        var data = new Date();
+        var dia = data.getDay();
+        var semana = new Array();
+        semana[0] = 'Domingo';
+        semana[1] = 'Segunda-Feira';
+        semana[2] = 'Terça-Feira';
+        semana[3] = 'Quarta-Feia';
+        semana[4] = 'Quinta-Feira';
+        semana[5] = 'Sexta-Feira';
+        semana[6] = 'Sábado';
+
+        console.log(data.toLocaleDateString() + " - " + semana[dia]);
+
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

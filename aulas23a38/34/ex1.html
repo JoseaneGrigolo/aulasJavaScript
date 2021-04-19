@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var data = new Date();
+    console.log(data);
+    console.log(data.toUTCString());
+    console.log(data.toDateString());
+    console.log(data.getDate());
+    console.log(data.getDay());//domingo 0 , segunda 1 ... 
+    console.log(data.getFullYear());
+    console.log(data.getMonth() + 1);//começa do 0 - janeiro....  
+    console.log(data.getMinutes());
+    console.log(data.getSeconds());
+    console.log(data.getMilliseconds());
+    console.log(data.getHours());
+    console.log(data.toLocaleDateString());
+    var data2 = new Date(86400000);
+    console.log(data2);
+    var data3 = new Date("Tue Mar 16 2021 09:14:20 GMT-0300");
+    console.log(data3);
+    var data4 = new Date(2021, 2, 17, 09, 14, 20);
+    console.log(data4);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

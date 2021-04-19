@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var contaCorrente = Array(2);
+
+        contaCorrente['nome'] = Array();
+        contaCorrente['numeroConta'] = Array();
+        contaCorrente['saldo'] = Array();
+
+        for(var i = 0; i < contaCorrente.length; i++){
+            contaCorrente['nome'][i] = prompt("Digite o nome do cliente: ");
+            contaCorrente['numeroConta'][i] = prompt("Digite o número da conta: ");
+            contaCorrente['saldo'][i] = parseFloat(prompt("Digite o saldo total: "));
+        }
+       
+        document.write("NOME: " + contaCorrente['nome'].join("| "));
+        document.write("<br>--------------------------------<br>");
+        document.write("MARCA: " + contaCorrente['numeroConta'].join("| "));
+        document.write("<br>---------------------------------<br>");
+        document.write("PREÇO: " + contaCorrente['saldo'].join("| "));
+
+
+        console.log(produtos);
+        console.log(produtos['nome']);
+        console.log(produtos['numeroConta']);
+        console.log(produtos['saldo']);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

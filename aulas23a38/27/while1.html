@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHILE 1</title>
+    <script>
+
+        var i = 0;
+        var cobaias;
+        var cont1 = 0;
+        var cont2 = 0;
+
+        while (i < 15) {
+            cobaias = parseInt(prompt("Digite o número de cobaias utilizadas em sua experiência: 1 ou 2."));
+
+            if (cobaias == 1) {
+                cont1++;
+
+            } else if (cobaias == 2) {
+                cont2 += 2;
+
+            } else {
+                document.write("Valor inválido \n");
+                break;
+            }
+
+            i++;
+
+        }
+        
+        document.write("Total de cobaias utilizadas: " + (cont1 + cont2));
+        /*
+        var i = 1
+         while (i <= 15) {
+            cobaias = parseInt(prompt("Digite o número de cobaias utilizadas em sua experiência: 1 ou 2."));
+            while(cobaias<1 || cobaias > 2){
+            cobaias = parseInt(prompt("Digite o número de cobaias utilizadas em sua experiência: 1 ou 2."));
+            }
+            
+        
+        */
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

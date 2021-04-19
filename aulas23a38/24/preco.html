@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRECO</title>
+    <script>
+        //1
+        var precoProduto = parseFloat(prompt("Insira o valor do produto: "));
+        var opcao = parseInt(prompt("Escolha a opção de pagamento: (1 a 4) "));
+
+        switch (opcao) {
+            case 1:
+                document.writeln("À vista no cartão ou cheque, recebe 10% de desconto: R$ ", (precoProduto - precoProduto * 0.10).toFixed(2));
+                break;
+            case 2:
+                document.writeln("À vista no dinheiro, recebe 15% de desconto: R$ ", (precoProduto - precoProduto * 0.15).toFixed(2));
+                break;
+            case 3:
+                document.writeln("Em duas vezes, preço normal de etiqueta sem juros: R$ ", (precoProduto).toFixed(2));
+                break;
+            case 4:
+                document.writeln("Em três vezes, preço normal de etiqueta mais juros de 10%: R$ ", (precoProduto * 1.10).toFixed(2));
+                break;
+            default:
+                document.writeln("Opção inválida!");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

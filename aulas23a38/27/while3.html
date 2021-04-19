@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHILE 3</title>
+    <script>
+
+        var quantidade = parseInt(prompt("Quantas idades você deseja digitar? "));
+        var i = 0;
+        var idade;
+        var contMaior = 0;
+        var contMenor = 0;
+
+        while (i < quantidade) {
+            idade = parseInt(prompt("Digite a idade: "));
+
+            if (idade >= 18) {
+                contMaior++;
+            } else {
+                contMenor++;
+            }
+            i++;
+        }
+
+        document.write("Quantidade de pessoas maiores de idade: " + contMaior);
+        document.write("<br><br>");
+        document.write("Quantidade de pessoas menores de idade: " + contMenor);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="texto"></h1>
+    <h2>Champagne Supernova</h2>
+   
+    <p id="um">Someday you will find me</p>
+    <p id="dois">Caught beneath the landslide</p>
+    <p id="tres">In a champagne supernova in the sky</p>
+
+    <div id="divUm">Duração: 5:08</div>
+    <div id="divDois">Ano: 1996</div>
+
+    <script>
+        var par1 = window.document.getElementById("um");
+        var par2 = window.document.getElementById("dois");
+        var div1 = window.document.getElementById("divUm");
+        var div2 = window.document.getElementById("divDois");
+        var h1Texto = window.document.getElementById("texto");
+      
+        par1.style.backgroundColor = "white"
+        par1.style.color = "black"
+
+        par2.style.fontSize = "26px"
+
+        div1.style.backgroundColor = "green"
+      
+        div2.innerText = "Aqui eu consigo"
+
+        h1Texto.innerText = "Oasis"
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAÇOS</title>
+    <script>
+        /*
+              var total = 0;
+              var menor = 1000;
+              var maior = 0;
+      
+              for (var i = 0; i < 15; i++) {
+                  var altura = parseFloat(prompt("Digite sua altura (Ex: 1.60): "));
+                
+                  if (altura < menor) {
+                      menor = altura;
+                  }
+                  if (altura > maior) {
+                      maior = altura;
+                  }
+                  total += altura;
+              
+              }
+              document.write("A menor altura do grupo: " + menor);
+              document.write("<br><br>");
+              document.write("A maior altura do grupo: " + maior);
+              document.write("<br><br>");
+              document.write("A media de alturas: " + (total / 15).toFixed(2));
+              */
+
+
+
+        var altura, menorAltura, maiorAltura, somaAlturas = 0, contador = 1;
+
+        while (contador <= 15) {
+            altura = parseFloat(prompt("Digite sua altura (Ex: 1.60): "));
+            somaAlturas += altura;
+
+            if (contador == 1) {
+                maiorAltura = altura;
+                menorAltura = altura;
+            } else {
+                if (altura < menorAltura)
+                    menorAltura = altura;
+                if (altura > maiorAltura)
+                    maiorAltura = altura;
+            }
+            contador++;
+
+        }
+        document.write("A menor altura do grupo: " + menorAltura);
+        document.write("<br><br>");
+        document.write("A maior altura do grupo: " + maiorAltura);
+        document.write("<br><br>");
+        document.write("A media de alturas: " + (somaAlturas / 15).toFixed(2));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

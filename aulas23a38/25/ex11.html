@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIOS</title>
+    <script>
+
+        var impares = 0;
+        var contImpar = 0;
+        var pares = 0;
+        var contPar = -1;
+
+        do {
+            var positivos = parseInt(prompt("Digite um número positivo: "));
+
+            if (positivos % 2 == 0) {
+                pares += positivos;
+                contPar++;
+            } else {
+                impares += positivos;
+                contImpar++;
+            }
+
+        } while (positivos > 0 && positivos != 0);
+
+        document.write("Quantidade de números Pares: " + contPar);
+        document.write("<br><br>");
+        document.write("Quantidade de números Impares: " + contImpar);
+        document.write("<br><br>");
+        document.write("Média de números Pares: " + (pares / contPar));
+        document.write("<br><br>");
+        document.write("Média Geral: " + ((pares + impares) / (contPar + contImpar)));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

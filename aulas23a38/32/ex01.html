@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX01</title>
+    <script>
+        function arrays() {
+            var numeros = [];
+            var numero;
+            var numerosTriplos = [];
+
+            do {
+                numero = parseInt(prompt("Digite um número entre 0 e 21: "));
+            } while (numero < 0 || numero > 21);
+
+            for (var i = 1; i <= numero; i++) {
+                numeros.push(i * 2);
+            }
+
+            numerosTriplos = numeros.map(function (valor) {
+                return valor * 3;
+            });
+
+            numeros.forEach(function (valor) {
+                document.write(valor + " ");
+            })
+            document.write("<br><br>");
+
+            numerosTriplos.forEach(function (valor) {
+                document.write(valor + " ");
+            })
+            document.write("<br><br>");
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="arrays()" type="submit">Exercicio 01 - Clique Aqui!</button>
+
+</body>
+
+</html>

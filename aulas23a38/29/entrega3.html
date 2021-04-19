@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <script>
+
+        function numerica(num, escala) {
+
+            if ((!isNaN(num) && num > 0) && (!isNaN(escala) && escala > 0)) {
+
+                var randNum = Math.random() * escala;
+                var subtracao = randNum - num;
+
+                return Math.abs(subtracao).toFixed(2);
+
+            } else {
+
+                alert("Erro, valor inválido!!");
+            }
+
+        }
+
+        var a = parseInt(prompt("Digite um número: "));
+        var b = parseInt(prompt("Digite a escala do número randomico: "));
+
+        document.write("Resultado absoluto da subtração: " + numerica(a, b));
+        document.write("<br><br>");
+        document.write("Numero escolhido pelo usuário: " + a);
+        document.write("<br><br>");
+        document.write("Numero randomico: " + randNum);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

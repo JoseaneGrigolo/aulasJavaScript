@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var clientes = Array();
+        clientes['nome'] = Array();
+        clientes['rg'] = Array();
+        clientes['cpf'] = Array();
+    //    clientes['nome'] = Array("João", "Maria", "Pedro", "Henrique", "Tulio");       
+    //    clientes['rg'] = Array("111","222","333","444","555");
+    //    clientes['cpf'] = Array("321","999","888","777","666");
+   
+    /*  console.log(clientes);
+        console.log(clientes['nome'][2])
+        console.log(clientes['cpf'][2])
+        console.log(clientes['rg'][2])
+    */
+        for(var i = 0; i < 5; i++){
+            clientes['nome'][i] = prompt("Digite um nome: ");
+            clientes['cpf'][i] = prompt("Digite um cpf: ");
+            clientes['rg'][i] = prompt("Digite um rg: ");
+        }
+       
+        document.write(clientes['nome'].join(", "));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

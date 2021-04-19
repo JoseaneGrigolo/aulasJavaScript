@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX02</title>
+    <script>
+        function arrays1() {
+            var temperaturas = [];
+            var nomes = [];
+            var n, m;
+
+            do {
+                n = parseInt(prompt("Digite um número entre 0 e 21: "));
+            } while (n < 0 || n > 10);
+
+            do {
+                m = parseInt(prompt("Digite um número entre 0 e 21: "));
+            } while (n < 0 || n > 10);
+
+
+            for (var i = 0; i < n; i++) {
+                temperaturas.push(parseInt(prompt("Digite uma temperatura: ")));
+            }
+
+            for (var i = 0; i < m; i++) {
+                nomes.push(prompt("Digite um nome: "));
+            }
+
+            var verifica = nomes.find(function (valor) {
+                return valor === "Eliana";
+            });
+
+            if (verifica) {
+                document.write("Existe no array")
+            } else {
+                document.write("Não existe no array")
+            }
+            document.write("<br><br>");
+
+            var filtrando = temperaturas.filter(function (elemento) {
+                return elemento > 20;
+            });
+            for (i = 0; i < filtrando.length; i++) {
+                document.write(filtrando[i] + " ");
+            }
+            document.write("<br><br>");
+
+            var verifica = nomes.find(function (valor) {
+                return valor === "Carlos";
+            });
+            var verificaIndex = nomes.findIndex(function (valor) {
+                return valor === "Carlos";
+            });
+
+            if (verifica) {
+                document.write("Existe Carlos. ");
+                document.write("Posição: " + verificaIndex);
+            } else {
+                document.write("Não existe.")
+            }
+            document.write("<br><br>");
+
+            var cubo = temperaturas.map(function (valor) {
+                return valor ** 3;
+            });
+
+            cubo.forEach(function (valor) {
+                document.write(valor + " ");
+            });
+            document.write("<br><br>");
+
+            var celsius = [];
+            
+            for(i=0; i < temperaturas.length; i++){
+                celsius.push((temperaturas[i] - 32)/ 1.8); 
+            }
+
+            celsius.forEach(function (valor) {
+                document.write(valor + " ");
+            });
+            document.write("<br><br>");
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="arrays1()" type="submit">Exercicio 02 - Clique Aqui!</button>
+
+</body>
+
+</html>

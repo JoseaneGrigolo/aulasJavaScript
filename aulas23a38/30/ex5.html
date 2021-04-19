@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03</title>
+    <script>
+        do {
+            var n = parseInt(prompt("Digite o tamanho do Array (1 a 20): "));
+        } while (n < 1 || n > 20);
+
+        animais = new Array(n);
+        for (var i = 0; i < animais.length; i++) {
+            animais[i] = prompt("Digite o nome de um animal: ");
+        }
+        for (i = 0; i < animais.length; i++) {
+            document.write(animais[i] + "\n");
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHILE 4</title>
+    <script>
+
+        var i = 0;
+        var contM = 0;
+        var contF = 0;
+        var maiorAltura = 0;
+
+        while (i < 5) {
+            var sexo = prompt("Digite seu sexo: (F = Feminino ou M = Masculino)");
+            var altura = parseFloat(prompt("Digite sua altura: (Ex: 1.60)"));
+
+            if (sexo == 'F') {
+                contF++;
+                if (altura > maiorAltura) {
+                    var maiorAlturaF = altura + " = Feminino";
+                }
+            } else if (sexo == 'M') {
+                contM++;
+                if (altura > maiorAltura) {
+                    var maiorAlturaM = altura + " = Masculino";
+                }
+            } else {
+                document.write("Opção inválida");
+                break;
+            }
+
+            i++;
+        }
+
+        document.write("Quantidade pessoas do sexo Feminino: " + contF);
+        document.write("<br><br>")
+        document.write("Quantidade pessoas do sexo Masculino: " + contM);
+        document.write("<br><br>")
+        
+        if (maiorAlturaM > maiorAlturaF) {
+            maiorAltura = maiorAlturaM;
+        } else {
+            maiorAltura = maiorAlturaF;
+        }
+        document.write("Maior altura: " + maiorAltura);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

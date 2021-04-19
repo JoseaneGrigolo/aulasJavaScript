@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var produtos = Array(3);
+
+        produtos['nome'] = Array();
+        produtos['marca'] = Array();
+        produtos['preco'] = Array();
+
+        for(var i = 0; i < produtos.length; i++){
+            produtos['nome'][i] = prompt("Digite o nome do produto: ");
+            produtos['marca'][i] = prompt("Digite a marca do produto: ");
+            produtos['preco'][i] = parseFloat(prompt("Digite o preço do produto: "));
+        }
+       
+        document.write("NOME: " + produtos['nome'].join(", "));
+        document.write("<br>--------------------------------<br>");
+        document.write("MARCA: " + produtos['marca'].join(", "));
+        document.write("<br>---------------------------------<br>");
+        document.write("PREÇO: " + produtos['preco'].join(", "));
+
+
+        console.log(produtos);
+        console.log(produtos['nome']);
+        console.log(produtos['marca']);
+        console.log(produtos['preco']);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

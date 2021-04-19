@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex01</title>
+    <script>
+
+        var cidades = [];
+
+        for (var i = 0; i < 6; i++) {
+            cidades.push(prompt("Digite uma cidade: "));
+        }
+        for (var i = 0; i < 6; i++) {
+            document.write(cidades[i]);
+            document.write("<br><br>");
+        }
+
+        cidades.pop();
+        cidades.shift();
+
+        var verifica = cidades.find(function (valor) {
+            return valor === "Rio de Janeiro";
+        });
+
+        if (verifica) {
+            document.write("Existe a cidade Rio de Janeiro.")
+        } else {
+            document.write("Não existe a cidade Rio de Janeiro.")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

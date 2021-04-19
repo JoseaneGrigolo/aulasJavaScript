@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(to top, rgb(62, 62, 194), pink, rgb(46, 151, 46)) no-repeat;
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            height: 100px;
+                
+        }
+
+    </style>
+    <script>
+        function um(){
+            alert("dispara o evento qdo gera caractere, so teclas de caractere");
+        }
+        function dois(){
+            alert("apertei, disparou o alert e depois apareceu");
+        }
+        function tres(){
+            alert("dispara qdo solta a tela");
+        }
+    </script>
+</head>
+<body>
+
+    <input onkeypress="um()" type="text">    
+    <input onkeydown="dois()" type="text"> 
+    <input onkeyup="tres()" type="text"> 
+
+</body>
+</html>
